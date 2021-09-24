@@ -1,4 +1,4 @@
-package edu.problems;
+package edu.problems.code;
 
 public class SprintTraining {
 

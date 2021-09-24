@@ -1,12 +1,13 @@
-package edu.problems;
+package edu.problems.code;
 
 public class DigitsManipulations {
     public static void main(String[] args) {
         DigitsManipulations manipulations = new DigitsManipulations();
-        System.out.println(manipulations.calc(1234));//123 = 6-6, 1234 = 24 - 10
+        System.out.println(manipulations.calc(1010));//123 = 6-6, 1234 = 24 - 10
     }
 
     int calc(int number){
+        if(number < 1 || number > Math.pow(10, 9)) throw  new IllegalArgumentException("Invalid input");
         return calcProduct(number) - calcSum(number);
     }
 
