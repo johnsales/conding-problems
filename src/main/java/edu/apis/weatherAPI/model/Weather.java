@@ -1,4 +1,4 @@
-package edu.weatherAPI.model;
+package edu.apis.weatherAPI.model;
 
 import org.springframework.format.annotation.DateTimeFormat;
 

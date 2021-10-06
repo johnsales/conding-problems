@@ -1,4 +1,4 @@
-package edu.weatherAPI.controller;
+package edu.apis.weatherAPI.controller;
 
 import edu.problems.code.ComponentDTO;
 import lombok.AllArgsConstructor;

@@ -1,7 +1,7 @@
-package edu.weatherAPI.controller;
+package edu.apis.weatherAPI.controller;
 
-import edu.weatherAPI.model.Weather;
-import edu.weatherAPI.repository.WeatherRepository;
+import edu.apis.weatherAPI.model.Weather;
+import edu.apis.weatherAPI.repository.WeatherRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;

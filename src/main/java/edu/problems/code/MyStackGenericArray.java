@@ -55,13 +55,20 @@ public class MyStackGenericArray<T extends Comparable<T>> {
         stack.push(2);
         stack.push(1);
         stack.reverse();
-
+        stack.pop();
 
         System.out.println(stack);
     }
 
     private void reverse() {
-        //TODO
+        Class<T> clazz = (Class<T>) Integer.class;
+        T[] tempArray = (T[]) Array.newInstance(clazz,size);
+        int newIndex = 0;
+        for (int i = size -1; i >=0; i--) {
+            tempArray[newIndex++] = array[i];
+        }
+
+        System.arraycopy(tempArray, 0, array, 0, tempArray.length);
     }
 
 }

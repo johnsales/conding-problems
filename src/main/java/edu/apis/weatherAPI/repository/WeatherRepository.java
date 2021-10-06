@@ -1,6 +1,6 @@
-package edu.weatherAPI.repository;
+package edu.apis.weatherAPI.repository;
 
-import edu.weatherAPI.model.Weather;
+import edu.apis.weatherAPI.model.Weather;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
