@@ -6,7 +6,7 @@ public class Anagram {
     public static void main(String[] args) {
         char str1[] = { 't', 'e', 's', 't' };
         char str2[] = { 't', 't', 'e', 'w' };
-        List<String> list = new ArrayList<>(Arrays.asList("Carro","Arroc","Maria","Riama","Joao","Oajo","Port","Torp"));
+        List<String> list = new ArrayList<>(Arrays.asList("Carro","Arroc","Maria","Marai","Riama","Joao","Oajo","Port","Torp"));
 
         if (areAnagram(str1, str2))
             System.out.println("The two strings are anagram of each other");
@@ -15,6 +15,10 @@ public class Anagram {
 
         System.out.println("Anagram List using Hashtable");
         System.out.println(areAnagramHashMap("ABC","CBA"));
+
+        System.out.println("Group of Anagrams");
+        System.out.println(groupAnagrams(new String[]{"Carro","Arroc","Maria","Marai","Riama","Joao","Oajo","Port","Torp"}));
+
     }
 
     /* function to check whether two strings are anagram of each other */
@@ -58,4 +62,18 @@ public class Anagram {
         }
         return true;
     }
+
+    static List<List<String>> groupAnagrams(String[] strs) {
+        HashMap<String, List<String>> map = new HashMap<>();
+        for (String str : strs) {
+            char[] arr = str.toCharArray();
+            Arrays.sort(arr);
+            String sorted = new String(arr);
+            map.putIfAbsent(sorted, new ArrayList<>());
+            map.get(sorted).add(str);
+        }
+        return new ArrayList<>(map.values());
+    }
+
+
 }

@@ -77,28 +77,22 @@ public class Palindrome {
         if (!set.isEmpty()) return pairCounter * 2 + 1;
         return pairCounter * 2;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+    /**
+        A word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
+     */
+    public boolean isPalindromeImproved(String str) {
+        int left = 0;
+        int right = str.length() - 1;
+
+        while (left < right) {
+            if (str.charAt(left) != str.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
+
 }

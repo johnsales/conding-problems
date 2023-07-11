@@ -45,7 +45,7 @@ public class FindDuplicates {
         }
     }
 
-    // Driver code
+    // Driver code - BROKEN CODE...!!!!!!!
     public static void main(String[] args) {
         FindDuplicates duplicate = new FindDuplicates();
         int arr[] = { 1, 2, 3, 1, 3, 6, 6 };
