@@ -8,7 +8,7 @@ public class MinimumSizeSubarraySum {
             while(sum >= target){
                 minLength = Math.min(minLength, R - L + 1);
                 sum -= nums[L++];
-            }
+            }//aaa
             R++;
         }
 
