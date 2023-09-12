@@ -2,7 +2,7 @@ package edu.problems.cracking_code_interview.chapter1;
 
 public class IsUnique {
     public static void main(String[] args) {
-        System.out.println(isUnique("abcdefghijklmnopqrstuvxz!@#$%^&*()_+a"));
+        System.out.println(isUnique("abcdefghijklmnopqrstuvxz!@#$%^&*()_+"));
     }
 
     static boolean isUnique(String string){

@@ -1,4 +1,4 @@
-package edu.problems.cracking_code_interview.chapter1.datastructures;
+package edu.problems.cracking_code_interview.chapter1.data_structures;
 
 import java.util.Objects;
 
