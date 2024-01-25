@@ -1,5 +1,23 @@
 package edu.problems.concurrency;
 
+
+/**
+
+ # Thread Lifecycle in Java
+
+ New: When a thread is created, but not yet started.
+
+ Runnable: The thread is executing or ready to execute when given CPU time.
+
+ Blocked: The thread is blocked and not eligible to run, usually waiting for a monitor lock.
+
+ Waiting: The thread is waiting indefinitely for another thread to perform a specific action.
+
+ Timed Waiting: The thread is waiting for another thread to perform an action for up to a specified waiting time.
+
+ Terminated: The thread has completed its execution or has been terminated.
+
+ */
 public class ThreadExample {
     private int count = 0;
 

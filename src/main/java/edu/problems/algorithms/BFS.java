@@ -24,7 +24,7 @@ public class BFS {
 
         bfsBinaryTree(root);
 
-        System.out.println("-------------------------");
+        System.out.println("\n-------------------------");
 
         List<List<Integer>> adjList = new ArrayList<>();
 
@@ -57,7 +57,7 @@ public class BFS {
 
         while (!q.isEmpty()){
             TreeNode node = q.poll();
-            System.out.println(node.val);
+            System.out.print(node.val);
 
             if(node.left != null){
                 q.add(node.left);
