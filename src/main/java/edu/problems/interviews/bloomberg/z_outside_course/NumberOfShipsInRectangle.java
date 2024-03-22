@@ -1,4 +1,4 @@
-package edu.problems.interviews.bloomberg;
+package edu.problems.interviews.bloomberg.z_outside_course;
 
 public class NumberOfShipsInRectangle {
     public static void main(String[] args) {

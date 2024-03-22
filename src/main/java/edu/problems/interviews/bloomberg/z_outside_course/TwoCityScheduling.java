@@ -1,4 +1,4 @@
-package edu.problems.interviews.bloomberg;
+package edu.problems.interviews.bloomberg.z_outside_course;
 
 import java.util.Arrays;
 import java.util.Comparator;

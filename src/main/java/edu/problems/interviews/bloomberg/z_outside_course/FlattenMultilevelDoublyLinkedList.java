@@ -1,4 +1,4 @@
-package edu.problems.interviews.bloomberg;
+package edu.problems.interviews.bloomberg.z_outside_course;
 
 public class FlattenMultilevelDoublyLinkedList {
     public static void main(String[] args) {
@@ -35,6 +35,7 @@ public class FlattenMultilevelDoublyLinkedList {
         }
     }
 
+    //time: O(N) & space: O(1)
     public Node flatten(Node head) {
         if (head == null) return null;
 
